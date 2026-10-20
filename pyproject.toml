@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "license-header-check"
+version = "0.1.0"
+description = "Check source files for license headers."
+requires-python = ">=3.9"
+
+[project.scripts]
+license-header-check = "license_header_check:main"
+
+[tool.setuptools]
+py-modules = ["license_header_check"]
